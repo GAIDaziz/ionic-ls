@@ -11,17 +11,22 @@
 </ion-header >
 
 
+<app-dog-form *ngIf="showform"></app-dog-form>
 
+<div *ngIf="!showform">
   <ion-card *ngFor="let dog of dog">
     <ion-card-header>
       <ion-card-title>{{dog.id}}</ion-card-title>
      
             <ion-card-subtitle>{{dog.name}}</ion-card-subtitle>
-
+    
     </ion-card-header>
   
     <ion-card-content>
       Here's a small text description for the card content. Nothing more, nothing less.
+   
     </ion-card-content>
+ 
   </ion-card>
 
+</div>

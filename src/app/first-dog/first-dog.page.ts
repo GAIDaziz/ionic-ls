@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonCardSubtitle, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonIcon, IonButtons, IonButton } from '@ionic/angular/standalone';
 import { dog } from '../entities';
+import { DogFormComponent } from "../dog-form/dog-form.component";
 
 @Component({
   selector: 'app-first-dog',
   templateUrl: './first-dog.page.html',
   styleUrls: ['./first-dog.page.scss'],
   standalone: true,
-  imports: [IonButton, IonButtons, IonIcon, IonCardContent, IonCardTitle, IonCardHeader, IonCard, IonCardSubtitle, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonButton, IonButtons, IonIcon, IonCardContent, IonCardTitle, IonCardHeader, IonCard, IonCardSubtitle, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, DogFormComponent]
 })
 export class FirstDogPage implements OnInit {
   dog!:dog[]

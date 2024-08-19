@@ -4,10 +4,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">FirstDog</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+
+
+  <ion-card *ngFor="let dog of dog">
+    <ion-card-header>
+      <ion-card-title>{{dog.id}}</ion-card-title>
+     
+            <ion-card-subtitle>{{dog.name}}</ion-card-subtitle>
+
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+

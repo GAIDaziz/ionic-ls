@@ -19,7 +19,7 @@ export class FirstDogPage implements OnInit {
   ngOnInit() {
     this.dog =[{
       id:1,
-      name :'clas',
+      name :'simba',
       breed: 'corgi',
       birthdate:'26-12-2027'
     }
